@@ -15,11 +15,10 @@ namespace MyWebApp.Data
                 {
                     return;
                 }
-                var majors = new Major[] {
-new Major{MajorName="IT"},
-new Major{MajorName="Economics"},
-new Major{MajorName="Mathematics"},
-};
+                var majors = new Major[] {new Major{MajorName="IT"},
+                    new Major{MajorName="Economics"},
+                    new Major{MajorName="Mathematics"},
+                };
                 foreach (var major in majors)
                 {
                     context.Majors.Add(major);
